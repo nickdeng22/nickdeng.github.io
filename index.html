@@ -1,186 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nick Deng Portfolio</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
+<title>Nick Deng Portfolio</title>
 
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #0f1117;
-      color: #e6e6e6;
-    }
+<style>
 
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 18px 30px;
-      background-color: #151923;
-      border-bottom: 1px solid #252b36;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+html{
+  scroll-behavior:smooth;
+}
 
-    .navbar a {
-      color: #e6e6e6;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
-    }
+body{
+  font-family: Arial, sans-serif;
+  margin:0;
+  background-color:#0f1117;
+  color:#e6e6e6;
+}
 
-    .navbar a:hover {
-      color: #7c5cff;
-    }
+/* NAVBAR */
 
-    .logo {
-      margin-left: 0 !important;
-      font-size: 20px;
-    }
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 40px;
+  background-color:#151923;
+  border-bottom:1px solid #252b36;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
 
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 50px 24px;
-    }
+.navbar a{
+  text-decoration:none;
+  color:#e6e6e6;
+  margin-left:24px;
+  font-weight:bold;
+}
 
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-      color: #ffffff;
-    }
+.navbar a:hover{
+  color:#7c5cff;
+}
 
-    .subtitle {
-      font-size: 18px;
-      color: #aab0c0;
-      margin-bottom: 40px;
-    }
+.logo{
+  font-size:20px;
+  margin-left:0;
+}
 
-    h2 {
-      font-size: 30px;
-      margin-top: 50px;
-      margin-bottom: 20px;
-      color: #ffffff;
-    }
+/* PAGE CONTAINER */
 
-    .project {
-      background-color: #181c25;
-      border: 1px solid #252b36;
-      border-radius: 14px;
-      padding: 22px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+.container{
+  max-width:900px;
+  margin:0 auto;
+  padding:50px 24px;
+}
 
-    .project:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    }
+/* HEADERS */
 
-    .project h3 {
-      margin-top: 0;
-      margin-bottom: 10px;
-      font-size: 24px;
-      color: #ffffff;
-    }
+h1{
+  font-size:48px;
+  margin-bottom:10px;
+  color:#ffffff;
+}
 
-    .project p {
-      margin-bottom: 16px;
-      color: #c7ccd6;
-      line-height: 1.6;
-    }
+.subtitle{
+  font-size:18px;
+  color:#aab0c0;
+  margin-bottom:40px;
+}
 
-    .button {
-      display: inline-block;
-      padding: 10px 16px;
-      background-color: #7c5cff;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background-color 0.2s ease;
-    }
+h2{
+  font-size:30px;
+  margin-top:50px;
+  margin-bottom:20px;
+  color:#ffffff;
+}
 
-    .button:hover {
-      background-color: #6948f5;
-    }
+/* PROJECT CARDS */
 
-    .resume-text {
-      color: #c7ccd6;
-      margin-bottom: 18px;
-      line-height: 1.6;
-    }
+.project{
+  background-color:#181c25;
+  border:1px solid #252b36;
+  border-radius:14px;
+  padding:22px;
+  margin-bottom:20px;
+  box-shadow:0 4px 14px rgba(0,0,0,0.2);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
 
-    .resume-button {
-      display: inline-block;
-      padding: 12px 18px;
-      background-color: #ffffff;
-      color: #0f1117;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: opacity 0.2s ease;
-    }
+.project:hover{
+  transform:translateY(-4px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
 
-    .resume-button:hover {
-      opacity: 0.85;
-    }
-  </style>
+.project h3{
+  margin-top:0;
+  margin-bottom:10px;
+  font-size:24px;
+}
+
+.project p{
+  margin-bottom:16px;
+  color:#c7ccd6;
+  line-height:1.6;
+}
+
+/* BUTTONS */
+
+.button{
+  display:inline-block;
+  padding:10px 16px;
+  background-color:#7c5cff;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+}
+
+.button:hover{
+  background-color:#6948f5;
+}
+
+.resume-text{
+  color:#c7ccd6;
+  margin-bottom:18px;
+}
+
+.resume-button{
+  display:inline-block;
+  padding:12px 18px;
+  background-color:#ffffff;
+  color:#0f1117;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+}
+
+.resume-button:hover{
+  opacity:.85;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+h1{
+  font-size:36px;
+}
+
+h2{
+  font-size:26px;
+}
+
+.project h3{
+  font-size:21px;
+}
+
+}
+
+</style>
 </head>
+
+
 <body>
-  <nav class="navbar">
-    <div class="nav-left">
-      <a href="index.html" class="logo">Nick Deng</a>
-    </div>
 
-    <div class="nav-right">
-      <a href="about.html">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
-    </div>
-  </nav>
+<!-- NAVBAR -->
 
-  <div class="container">
-    <h1>Nick Deng</h1>
-    <p class="subtitle">Electrical Engineering & Computer Science Student at UC Berkeley</p>
+<nav class="navbar">
 
-    <h2 id="projects">Projects</h2>
+<div>
+<a href="index.html" class="logo">Nick Deng</a>
+</div>
 
-    <div class="project">
-      <h3>Hog Project</h3>
-      <p>Custom Python turn-based game.</p>
-      <a class="button" href="https://github.com/nickdeng22/hog" target="_blank">View Code</a>
-    </div>
+<div>
+<a href="about.html">About</a>
+<a href="#projects">Projects</a>
+<a href="#resume">Resume</a>
+</div>
 
-    <div class="project">
-      <h3>Cats Project</h3>
-      <p>Typing simulator with real-world data and autocorrect.</p>
-      <a class="button" href="https://github.com/nickdeng22/cats" target="_blank">View Code</a>
-    </div>
+</nav>
 
-    <div class="project">
-      <h3>Ants Project</h3>
-      <p>Custom tower defense game with object-oriented design and different types of characters.</p>
-      <a class="button" href="https://github.com/nickdeng22/ants" target="_blank">View Code</a>
-    </div>
 
-    <div class="project">
-      <h3>Scheme Interpreter</h3>
-      <p>Built a Scheme interpreter in Python that supports multiple different Scheme implementations.</p>
-      <a class="button" href="https://github.com/nickdeng22/scheme-interpreter" target="_blank">View Code</a>
-    </div>
+<div class="container">
 
-    <h2 id="resume">Resume</h2>
-    <p class="resume-text">You can view or download my resume below.</p>
-    <a class="resume-button" href="resume.pdf" target="_blank">Download Resume</a>
-  </div>
+<h1>Nick Deng</h1>
+
+<p class="subtitle">
+Electrical Engineering & Computer Science Student at UC Berkeley
+</p>
+
+
+<!-- PROJECTS SECTION -->
+
+<h2 id="projects">Projects</h2>
+
+<div class="project">
+<h3>Hog Project</h3>
+<p>Custom Python turn-based game.</p>
+<a class="button" href="https://github.com/nickdeng22/hog" target="_blank">View Code</a>
+</div>
+
+<div class="project">
+<h3>Cats Project</h3>
+<p>Typing simulator with real-world data and autocorrect.</p>
+<a class="button" href="https://github.com/nickdeng22/cats" target="_blank">View Code</a>
+</div>
+
+<div class="project">
+<h3>Ants Project</h3>
+<p>Custom tower defense game with object-oriented design and different types of characters.</p>
+<a class="button" href="https://github.com/nickdeng22/ants" target="_blank">View Code</a>
+</div>
+
+<div class="project">
+<h3>Scheme Interpreter</h3>
+<p>Built a Scheme interpreter in Python that supports multiple different Scheme implementations.</p>
+<a class="button" href="https://github.com/nickdeng22/scheme-interpreter" target="_blank">View Code</a>
+</div>
+
+
+<!-- RESUME SECTION -->
+
+<h2 id="resume">Resume</h2>
+
+<p class="resume-text">
+You can view or download my resume below.
+</p>
+
+<a class="resume-button" href="resume.pdf" target="_blank">
+Download Resume
+</a>
+
+</div>
+
 </body>
 </html>
