@@ -6,11 +6,43 @@
   <title>Nick Deng Portfolio</title>
 
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       background-color: #0f1117;
       color: #e6e6e6;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 30px;
+      background-color: #151923;
+      border-bottom: 1px solid #252b36;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: #e6e6e6;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      color: #7c5cff;
+    }
+
+    .logo {
+      margin-left: 0 !important;
+      font-size: 20px;
     }
 
     .container {
@@ -101,28 +133,26 @@
     .resume-button:hover {
       opacity: 0.85;
     }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 36px;
-      }
-
-      h2 {
-        font-size: 26px;
-      }
-
-      .project h3 {
-        font-size: 21px;
-      }
-    }
   </style>
 </head>
 <body>
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html" class="logo">Nick Deng</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="about.html">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+    </div>
+  </nav>
+
   <div class="container">
     <h1>Nick Deng</h1>
     <p class="subtitle">Electrical Engineering & Computer Science Student at UC Berkeley</p>
 
-    <h2>Projects</h2>
+    <h2 id="projects">Projects</h2>
 
     <div class="project">
       <h3>Hog Project</h3>
@@ -148,7 +178,7 @@
       <a class="button" href="https://github.com/nickdeng22/scheme-interpreter" target="_blank">View Code</a>
     </div>
 
-    <h2>Resume</h2>
+    <h2 id="resume">Resume</h2>
     <p class="resume-text">You can view or download my resume below.</p>
     <a class="resume-button" href="resume.pdf" target="_blank">Download Resume</a>
   </div>
